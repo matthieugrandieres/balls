@@ -1,0 +1,60 @@
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: rgb(246, 246, 246);
+}
+
+div.ball-foot{
+    position: absolute;
+    width: 80vw;
+    height: 300px;
+    overflow: hidden;
+    background-color: white;
+
+}
+
+div.ball-foot img{
+    width: 100px;
+    height:100px;
+    position: relative;
+    left: 0;
+    animation: bounce 5s ease-out infinite;
+    
+    
+}
+
+@keyframes bounce{
+    0% { top: 207px; left: 0%; transform: rotate(0deg);}
+    5% { top:0%}
+    9%{transform: scaleY(1);}
+    10%{ top: 230px; transform: scaleY(0.5);}
+    15% { top:10%; transform: scaleY(1);}
+
+    19%{transform: scaleY(1);}
+    20%{ top: 220px; transform: scaleY(0.6);}
+    25% { top:20%; transform: scaleY(1);}
+
+    29%{transform: scaleY(1);}
+    30%{ top : 220px; transform: scaleY(0.7); }
+    35% { top:30%; transform: scaleY(1);}
+
+    39%{transform: scaleY(1);}
+    40%{ top: 215px; transform: scaleY(0.8);}
+    45% { top:40%; transform: scaleY(1);}
+
+    49%{transform: scaleY(1);}
+    50% { top: 215px; transform: scaleY(0.9);}
+    55% { top:50%; transform: scaleY(1);}
+
+    59%{transform: scaleY(1);}
+    60% { top: 220px; transform: scaleY(0.9);}
+    65% { top:50%; transform: scaleY(1);}
+
+
+    70%{ top: 207px; transform: rotate(360deg);}
+
+    100% { left: 100%;  top: 207px; transform: rotate(900deg);}
+}
