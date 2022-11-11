@@ -13,48 +13,32 @@ div.ball-foot{
     height: 300px;
     overflow: hidden;
     background-color: white;
-
 }
 
 div.ball-foot img{
-    width: 100px;
-    height:100px;
+    width: 155px;
+    height:150px;
     position: relative;
-    left: 0;
-    animation: bounce 5s ease-out infinite;
-    
-    
+    animation: bounce 2s ease-out infinite;   
 }
 
 @keyframes bounce{
-    0% { top: 207px; left: 0%; transform: rotate(0deg);}
-    5% { top:0%}
-    9%{transform: scaleY(1);}
-    10%{ top: 230px; transform: scaleY(0.5);}
-    15% { top:10%; transform: scaleY(1);}
+    0% { top: 158px; left: 0%; transform: rotate(0deg);}
 
-    19%{transform: scaleY(1);}
-    20%{ top: 220px; transform: scaleY(0.6);}
-    25% { top:20%; transform: scaleY(1);}
+    16.66%{top:0%;}
+    24.93%{top:158px;}
 
-    29%{transform: scaleY(1);}
-    30%{ top : 220px; transform: scaleY(0.7); }
-    35% { top:30%; transform: scaleY(1);}
+    33.26%{top:10%;}
+    41.77%{top:158px;}
 
-    39%{transform: scaleY(1);}
-    40%{ top: 215px; transform: scaleY(0.8);}
-    45% { top:40%; transform: scaleY(1);}
+    50%{top:20%;}
+    58.23%{top:158px;}
 
-    49%{transform: scaleY(1);}
-    50% { top: 215px; transform: scaleY(0.9);}
-    55% { top:50%; transform: scaleY(1);}
+    66.66%{top:30%;}
+    74.93%{top:158px;}
 
-    59%{transform: scaleY(1);}
-    60% { top: 220px; transform: scaleY(0.9);}
-    65% { top:50%; transform: scaleY(1);}
-
-
-    70%{ top: 207px; transform: rotate(360deg);}
-
-    100% { left: 100%;  top: 207px; transform: rotate(900deg);}
+    83.26%{top:40%;}
+    91.77%{top:158px;}
+    
+    100% {transform: rotate(360deg); left: 100%; top: 158px;}
 }
