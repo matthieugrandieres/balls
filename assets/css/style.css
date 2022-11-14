@@ -1,18 +1,29 @@
 .main{
-    display: flex;
-    justify-content: center;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 50px;
 }
+
+@media (max-width: 767.98px) {
+    .main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+     }
+ }
 
 body{
     background-color: rgb(246, 246, 246);
 }
 
+
+/** ================ **/
+/** Ballon foot **/
+/** ================ **/
 div.ball-foot{
-    position: absolute;
-    width: 80vw;
     height: 300px;
     overflow: hidden;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 div.ball-foot img{
@@ -41,4 +52,30 @@ div.ball-foot img{
     91.77%{top:158px;}
     
     100% {transform: rotate(360deg); left: 100%; top: 158px;}
+}
+
+/** ================ **/
+/** Ballon basket **/
+/** ================ **/
+
+div.ball-basket{
+    height: 300px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+div.ball-basket img{
+    width: 155px;
+    height:150px;
+    position: relative;
+    animation: basket 0.5s ease-out infinite;   
+}
+
+@keyframes basket{
+    0%{top: 155px;}
+    50%{top: 0%;}
+    100%{top: 155px;}
 }
